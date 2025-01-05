@@ -11,3 +11,4 @@
 2025-01-05T16:15:45 - Tweak config
 2025-01-05T09:20:58 - Update dependencies
 2025-01-05T16:07:45 - Add tests
+2025-01-05T14:45:24 - Fix edge case
