@@ -56,3 +56,4 @@
 2025-01-22T16:15:46 - Bump version
 2025-01-23T11:40:11 - Rename variables
 2025-01-23T09:09:39 - Minor cleanup
+2025-01-24T11:03:41 - Improve error handling
