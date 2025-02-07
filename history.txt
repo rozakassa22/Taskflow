@@ -91,3 +91,4 @@
 2025-02-06T09:30:09 - Fix typo in README
 2025-02-07T10:30:00 - Add tests
 2025-02-07T10:20:50 - Update dependencies
+2025-02-07T14:23:53 - Remove unused code
