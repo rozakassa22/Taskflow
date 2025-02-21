@@ -129,3 +129,4 @@
 2025-02-20T13:12:42 - Improve error handling
 2025-02-21T17:19:57 - Rename variables
 2025-02-21T09:28:58 - Update documentation
+2025-02-21T16:05:35 - Fix edge case
