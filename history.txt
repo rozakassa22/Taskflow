@@ -134,3 +134,4 @@
 2025-02-22T11:52:31 - Tweak config
 2025-02-22T10:21:00 - Add tests
 2025-02-23T14:55:33 - Rename variables
+2025-02-23T10:49:20 - Fix edge case
