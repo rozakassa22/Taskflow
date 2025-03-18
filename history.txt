@@ -182,3 +182,4 @@
 2025-03-17T16:37:15 - Add tests
 2025-03-17T16:57:36 - Add tests
 2025-03-18T12:21:52 - Add tests
+2025-03-18T18:07:38 - Improve error handling
