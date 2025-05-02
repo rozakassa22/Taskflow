@@ -281,3 +281,4 @@
 2025-04-30T17:38:16 - Fix edge case
 2025-05-01T18:58:28 - Fix typo in README
 2025-05-02T12:13:51 - Bump version
+2025-05-02T14:43:13 - Improve performance
