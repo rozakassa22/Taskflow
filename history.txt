@@ -285,3 +285,4 @@
 2025-05-02T11:12:50 - Adjust formatting
 2025-05-03T11:20:51 - Tweak config
 2025-05-03T15:27:05 - Bump version
+2025-05-03T14:55:34 - Fix edge case
