@@ -288,3 +288,4 @@
 2025-05-03T14:55:34 - Fix edge case
 2025-05-04T17:16:47 - Update gitignore
 2025-05-04T11:12:50 - Tweak config
+2025-05-04T10:19:49 - Fix typo in README
