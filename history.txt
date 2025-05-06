@@ -293,3 +293,4 @@
 2025-05-05T15:24:55 - Minor cleanup
 2025-05-06T15:37:15 - Update gitignore
 2025-05-06T13:52:22 - Adjust formatting
+2025-05-06T12:14:52 - Improve error handling
