@@ -305,3 +305,4 @@
 2025-05-12T17:28:06 - Add comments
 2025-05-13T17:36:07 - Update gitignore
 2025-05-13T11:52:30 - Bump version
+2025-05-14T12:42:12 - Fix typo in README
