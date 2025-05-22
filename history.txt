@@ -328,3 +328,4 @@
 2025-05-20T15:56:34 - Fix edge case
 2025-05-21T09:58:28 - Tweak config
 2025-05-21T17:19:57 - Add new feature
+2025-05-22T17:58:36 - Update documentation
