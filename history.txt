@@ -358,3 +358,4 @@
 2025-06-02T15:07:45 - Improve error handling
 2025-06-02T09:21:59 - Bump version
 2025-06-03T11:13:51 - Minor cleanup
+2025-06-03T09:40:18 - Adjust formatting
