@@ -368,3 +368,4 @@
 2025-06-07T11:01:31 - Bump version
 2025-06-07T16:06:36 - Improve error handling
 2025-06-07T12:12:42 - Remove unused code
+2025-06-08T16:07:45 - Fix typo in README
