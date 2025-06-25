@@ -399,3 +399,4 @@
 2025-06-23T17:59:37 - Update documentation
 2025-06-23T11:50:20 - Bump version
 2025-06-23T18:27:57 - Clean up code
+2025-06-25T16:47:18 - Improve error handling
