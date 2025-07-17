@@ -439,3 +439,4 @@
 2025-07-16T10:59:29 - Minor cleanup
 2025-07-17T12:51:22 - Fix edge case
 2025-07-17T14:23:53 - Fix edge case
+2025-07-17T11:20:50 - Fix typo in README
