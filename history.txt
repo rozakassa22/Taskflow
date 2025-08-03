@@ -473,3 +473,4 @@
 2025-08-02T11:10:40 - Add new feature
 2025-08-02T18:08:38 - Add tests
 2025-08-02T11:11:41 - Improve error handling
+2025-08-03T10:12:42 - Fix typo in README
