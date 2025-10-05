@@ -632,3 +632,4 @@
 2025-10-04T17:39:17 - Add comments
 2025-10-05T18:30:08 - Add tests
 2025-10-05T16:25:55 - Rename variables
+2025-10-05T11:32:10 - Update documentation
