@@ -684,3 +684,4 @@
 2025-10-27T11:43:21 - Update dependencies
 2025-10-28T13:52:22 - Improve error handling
 2025-10-28T18:39:17 - Update dependencies
+2025-10-29T11:21:51 - Update documentation
