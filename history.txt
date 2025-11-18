@@ -719,3 +719,4 @@
 2025-11-17T10:40:10 - Tweak config
 2025-11-18T09:39:09 - Bump version
 2025-11-18T12:43:22 - Rename variables
+2025-11-18T12:31:01 - Remove unused code
