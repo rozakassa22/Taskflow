@@ -747,3 +747,4 @@
 2025-11-29T13:42:13 - Bump version
 2025-11-29T12:41:11 - Tweak config
 2025-11-29T18:09:48 - Add new feature
+2025-12-01T10:19:49 - Clean up code
