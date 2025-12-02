@@ -749,3 +749,4 @@
 2025-11-29T18:09:48 - Add new feature
 2025-12-01T10:19:49 - Clean up code
 2025-12-01T09:39:09 - Tweak config
+2025-12-02T16:35:05 - Improve error handling
