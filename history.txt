@@ -763,3 +763,4 @@
 2025-12-11T15:26:56 - Tweak config
 2025-12-13T10:59:30 - Adjust formatting
 2025-12-13T18:50:28 - Remove unused code
+2025-12-14T13:04:43 - Fix edge case
