@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow — your boards</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <nav id="navbar" class="navbar hidden">
+    <div class="brand">
+      <span class="logo">▣</span>
+      <span>TaskFlow</span>
+    </div>
+    <div class="nav-actions">
+      <span id="user-email" class="user-email"></span>
+      <button id="logout-btn" class="ghost-btn">Sign out</button>
+    </div>
+  </nav>
+
+  <main id="root">
+    <!-- AUTH -->
+    <section id="view-auth" class="view view-auth hidden">
+      <div class="auth-card">
+        <div class="auth-brand">
+          <span class="logo-lg">▣</span>
+          <h1>TaskFlow</h1>
+          <p>Self-hosted Kanban for the things you're actually working on.</p>
+        </div>
+        <div class="tabs">
+          <button class="tab active" data-tab="login">Sign in</button>
+          <button class="tab" data-tab="register">Create account</button>
+        </div>
+        <form id="auth-form">
+          <label>
+            Email
+            <input id="auth-email" type="email" required autocomplete="email" />
+          </label>
+          <label>
+            Password
+            <input id="auth-password" type="password" required minlength="8" autocomplete="current-password" />
+          </label>
+          <p id="auth-error" class="error-text hidden"></p>
+          <button type="submit" class="primary-btn" id="auth-submit">Sign in</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- BOARDS LIST -->
+    <section id="view-boards" class="view view-boards hidden">
+      <header class="page-header">
+        <h1>Your boards</h1>
+        <button id="new-board-btn" class="primary-btn">+ New board</button>
+      </header>
+      <div id="boards-grid" class="boards-grid"></div>
+      <p id="boards-empty" class="empty hidden">No boards yet. Create your first one.</p>
+    </section>
+
+    <!-- SINGLE BOARD -->
+    <section id="view-board" class="view view-board hidden">
+      <header class="board-header">
+        <button id="back-btn" class="ghost-btn">← Boards</button>
+        <h1 id="board-title"></h1>
+        <button id="delete-board-btn" class="danger-btn">Delete board</button>
+      </header>
+      <div id="columns" class="columns"></div>
+    </section>
+  </main>
+
+  <!-- New-board modal -->
+  <div id="modal-board" class="modal hidden">
+    <div class="modal-card">
+      <h2>New board</h2>
+      <form id="new-board-form">
+        <label>
+          Name
+          <input id="new-board-name" type="text" maxlength="120" required />
+        </label>
+        <div class="modal-actions">
+          <button type="button" class="ghost-btn" data-close>Cancel</button>
+          <button type="submit" class="primary-btn">Create</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- New-card modal -->
+  <div id="modal-card" class="modal hidden">
+    <div class="modal-card">
+      <h2>New card</h2>
+      <form id="new-card-form">
+        <label>
+          Title
+          <input id="new-card-title" type="text" maxlength="200" required />
+        </label>
+        <label>
+          Description
+          <textarea id="new-card-description" rows="3"></textarea>
+        </label>
+        <label>
+          Priority
+          <select id="new-card-priority">
+            <option value="low">Low</option>
+            <option value="normal" selected>Normal</option>
+            <option value="high">High</option>
+          </select>
+        </label>
+        <div class="modal-actions">
+          <button type="button" class="ghost-btn" data-close>Cancel</button>
+          <button type="submit" class="primary-btn">Add card</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.2/Sortable.min.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
