@@ -38,9 +38,15 @@ def create_app() -> FastAPI:
     app.include_router(columns.router)
     app.include_router(cards.router)
 
-    frontend_dir = Path(__file__).resolve().parent.parent.parent / "frontend"
-    if frontend_dir.exists():
-        app.mount("/", StaticFiles(directory=str(frontend_dir), html=True), name="static")
+    # Locate the frontend directory in dev (../../frontend) and Docker (/app/frontend).
+    here = Path(__file__).resolve().parent
+    candidates = [here.parent.parent / "frontend", here.parent / "frontend"]
+    for frontend_dir in candidates:
+        if frontend_dir.exists():
+            app.mount(
+                "/", StaticFiles(directory=str(frontend_dir), html=True), name="static"
+            )
+            break
 
     return app
 

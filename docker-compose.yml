@@ -1,0 +1,21 @@
+services:
+  app:
+    build: .
+    image: taskflow:local
+    container_name: taskflow
+    ports:
+      - "8000:8000"
+    environment:
+      TASKFLOW_DATABASE_URL: "sqlite:////data/taskflow.db"
+      TASKFLOW_JWT_SECRET: "${TASKFLOW_JWT_SECRET:-please-override-me}"
+    volumes:
+      - taskflow-data:/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8000/api/health').status==200 else 1)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  taskflow-data:
