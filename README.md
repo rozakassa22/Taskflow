@@ -4,20 +4,20 @@ A self-hosted Kanban board for personal and small-team task management. Multi-us
 
 ## Features
 
-- **Auth** — register, login, password hashing (bcrypt), JWT-based sessions
-- **Boards** — create multiple boards per user
-- **Columns** — customizable, ordered columns per board (default: Todo / Doing / Done)
-- **Cards** — title, description, priority, due date, ordered within a column
-- **Drag-and-drop** — reorder cards within a column, move cards between columns
-- **REST API** — fully documented at `/docs` via FastAPI's automatic OpenAPI
-- **Self-hosted** — one docker-compose command and you're running
+- **Auth** - register, login, password hashing (bcrypt), JWT-based sessions
+- **Boards** - create multiple boards per user
+- **Columns** - customizable, ordered columns per board (default: Todo / Doing / Done)
+- **Cards** - title, description, priority, due date, ordered within a column
+- **Drag-and-drop** - reorder cards within a column, move cards between columns
+- **REST API** - fully documented at `/docs` via FastAPI's automatic OpenAPI
+- **Self-hosted** - one docker-compose command and you're running
 
 ## Stack
 
 | Layer | Choice |
 |------|--------|
 | Backend | Python 3.11+, FastAPI, SQLAlchemy 2.x, Pydantic v2 |
-| Database | SQLite (default) — swap to Postgres via `DATABASE_URL` |
+| Database | SQLite (default) - swap to Postgres via `DATABASE_URL` |
 | Auth | Bcrypt + JWT (`python-jose`) |
 | Frontend | Vanilla HTML/CSS/JS + SortableJS for drag-and-drop |
 | Container | Docker + docker-compose |
@@ -60,7 +60,3 @@ PATCH  /api/cards/{id}/move   { "column_id", "position" }
 ```
 
 All endpoints other than `/api/auth/*` require `Authorization: Bearer <token>`.
-
-## License
-
-MIT
